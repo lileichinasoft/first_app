@@ -3,10 +3,11 @@
 <head>
   <script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/6e9ce18878c647a36bf6f6bf7699240a/allmobilize.min.js"></script><meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
   
-  <title>www.youyong.me</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+
+<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
 </head>
 <body>
 
